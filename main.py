@@ -1,5 +1,4 @@
 # dashboard.py
-
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -8,6 +7,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import calendar
 import numpy as np
+
 
 # --- Page Setup ---
 st.set_page_config(page_title="NEOvision AI", layout="wide")
@@ -23,7 +23,7 @@ Here, `hazardous` is treated as a predicted label by a trained ML model.
 """)
 
 # --- Load Data ---
-df = pd.read_csv("../data/neos_labeled.csv")
+df = pd.read_csv("data/neos_labeled.csv")
 df["cd"] = pd.to_datetime(df["cd"])
 
 # --- Sidebar Filters ---
@@ -97,7 +97,7 @@ st.pyplot(fig)
 # 🔄 KDE/Violin Plot
 st.markdown("#### Diameter Distribution by Hazard Status")
 fig_violin = px.violin(filtered_df, y="diameter", x="hazardous", box=True, points="all",
-                       title="Diameter Distribution by Hazard Status")
+                    title="Diameter Distribution by Hazard Status")
 st.plotly_chart(fig_violin, use_container_width=True)
 
 # ⚠️ Risk Level vs Hazardous (if 'risk_level' exists)
@@ -132,7 +132,7 @@ heatmap_data = (
     .pivot(index="month", columns="day", values="count")
 )
 month_order = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
-               "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 heatmap_data = heatmap_data.reindex(month_order)
 fig, ax = plt.subplots(figsize=(12, 5))
 sns.heatmap(heatmap_data, cmap="Reds", linewidths=0.5, linecolor='gray', annot=True, fmt=".0f")
