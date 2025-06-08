@@ -32,26 +32,26 @@
 ```
 NEO-EARTH-CLOSE-APPROACHES-ML/                  
 ├── app/
-│   └── dashboard.py        # Core dashboard logic and plots
+│   └── dashboard.py              # Core dashboard logic and plots
 ├── data/
-│   ├── neos_labeled.csv    # Labeled NEO data with ML
-│   ├── historical_neos.csv    # Unlabeled NEO data without ML
-│   └── raw_data.json    # Raw fetched data straight from the API
+│   ├── neos_labeled.csv          # Labeled NEO data with ML
+│   ├── historical_neos.csv       # Unlabeled NEO data without ML
+│   └── raw_data.json             # Raw fetched data from API
 ├── models/
 │   └── neo_classifier.pkl        # Machine Learning Model
 ├── notebooks/
-│   ├── explorations.ipynb    # Exploratory Data Analysis
-│   ├── feature_engineering.ipynb    # Feature Engineering
-│   ├── historical.ipynb    # Fetching and Saving Historical Data
-│   └── ml_modeling.ipynb    # ML Modeling Script
+│   ├── explorations.ipynb        # Exploratory Data Analysis
+│   ├── feature_engineering.ipynb # Feature Engineering
+│   ├── historical.ipynb          # Fetch & Save Historical Data
+│   └── ml_modeling.ipynb         # ML Modeling Script
 ├── utils/
-│   ├── fetch_data.py    # Fetching Real Time data from the API
-│   ├── load_model_and_predict.py    # Model Predictions
-│   ├── predict_live.py    # Real Time Prediction
-│   ├── predict.py    # GridSearch Predictions
-│   └── preprocess.py    # Data Preprocessing
-├── requirements.txt        # Python dependencies
-└── README.md               # This file
+│   ├── fetch_data.py             # Fetch Real Time data using API
+│   ├── load_model_and_predict.py # Model Predictions
+│   ├── predict_live.py           # Real Time Prediction
+│   ├── predict.py                # GridSearch Predictions
+│   └── preprocess.py             # Data Preprocessing
+├── requirements.txt              # Python dependencies
+└── README.md                     # This file
 ```
 ---
 
