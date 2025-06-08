@@ -102,20 +102,10 @@ git clone https://github.com/yourusername/NEO-Earth-Close-Approaches-ML.git
 cd NEO-Earth-Close-Approaches-ML
 ```
 
-2. Create a Virtual Environment (Optional)
+2. Run the Bash Script
 ```
-python -m venv env
-source env/bin/activate
-```
-
-3. Install required packages
-```
-pip install -r requirements.txt
-```
-
-4. Launch the Streamlit dashboard
-```
-streamlit run main.py
+chmod +x run.sh
+./run.sh
 ```
 
 ## 🤖 Machine Learning Classification
