@@ -30,9 +30,7 @@
 
 ## 📂 File Structure
 ```
-NEO-EARTH-CLOSE-APPROACHES-ML/                  
-├── app/
-│   └── dashboard.py              # Core dashboard logic and plots
+NEO-EARTH-CLOSE-APPROACHES-ML/                   
 ├── data/
 │   ├── neos_labeled.csv          # Labeled NEO data with ML
 │   ├── historical_neos.csv       # Unlabeled NEO data without ML
@@ -50,6 +48,7 @@ NEO-EARTH-CLOSE-APPROACHES-ML/
 │   ├── predict_live.py           # Real Time Prediction
 │   ├── predict.py                # GridSearch Predictions
 │   └── preprocess.py             # Data Preprocessing
+├── main.py                       # Core dashboard logic and plots
 ├── requirements.txt              # Python dependencies
 └── README.md                     # This file
 ```
