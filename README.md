@@ -115,8 +115,7 @@ pip install -r requirements.txt
 
 4. Launch the Streamlit dashboard
 ```
-cd app
-streamlit run dashboard.py
+streamlit run main.py
 ```
 
 ## 🤖 Machine Learning Classification
