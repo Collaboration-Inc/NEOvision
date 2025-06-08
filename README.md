@@ -131,7 +131,7 @@ The model was trained using historical NASA NEO data and cross-validated for rel
 
 ## Future Updates
 
-Currently, the project displays the results of our inferences made while predicting the dataset we fetched by our side, will be updating this project with a real-time classification one.Historical NEO Trends Dashboard for visualization of year-wise close approaches.Orbital Animation of incoming NEOs using Plotly 3D
+Currently, the project displays the results of our inferences made while predicting the dataset we fetched by our side, will be updating this project with a real-time classification one.Historical NEO Trends Dashboard for visualization of year-wise close approaches.Orbital Animation of incoming NEOs using Plotly 3D.
 
 ## ✨ Authors
 
